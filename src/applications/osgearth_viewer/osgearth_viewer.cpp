@@ -31,7 +31,11 @@ using namespace osgEarth::Util;
 int
 main(int argc, char** argv)
 {
-    osg::ArgumentParser arguments(&argc,argv);
+// 	osgDB::ReaderWriter::Options* opt = new osgDB::ReaderWriter::Options;
+// 	opt->setObjectCacheHint( osgDB::ReaderWriter::Options::CACHE_IMAGES);
+// 	osgDB::Registry::instance()->setOptions( opt )
+
+	osg::ArgumentParser arguments(&argc,argv);
     if ( arguments.read("--stencil") )
         osg::DisplaySettings::instance()->setMinimumNumStencilBits( 8 );
 
@@ -54,8 +58,13 @@ main(int argc, char** argv)
         // osgEarth benefits from pre-compilation of GL objects in the pager. In newer versions of
         // OSG, this activates OSG's IncrementalCompileOpeartion in order to avoid frame breaks.
         viewer.getDatabasePager()->setDoPreCompile( true );
-
-        return viewer.run();
+		
+// 		osgDB::ReaderWriter* rw = osgDB::Registry::instance()->getReaderWriterForExtension("osg");
+// 		if (rw)
+// 		{
+// 			rw->writeNode(*node, "g:/oren/OSG_Earth2/data/myData/osgtxt.osg", new osgDB::Options("Ascii"));
+		
+		return viewer.run();
     }
     else
     {
