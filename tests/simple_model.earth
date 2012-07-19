@@ -11,7 +11,7 @@ needs to be absolutely positioned.
     </image>
 	
 	<model name = "cow" driver="simple">
-	  <url>cow.osg.100,100,100.scale</url>
+	  <url>g:/oren/OSG_Earth2/data/myData/Hangar-FD.osg.100,100,100.scale</url>
 	  <location>-74.018 40.717 10</location>	  
 	</model>
     

@@ -506,7 +506,7 @@ MapNodeHelper::parse(MapNode*             mapNode,
         root->addChild( sky );
         Control* c = SkyControlFactory().create(sky, view);
         if ( c )
-            mainContainer->addControl( c );
+			mainContainer->addControl( c );
     }
 
     // Adding an ocean model:
@@ -518,7 +518,7 @@ MapNodeHelper::parse(MapNode*             mapNode,
             root->addChild( ocean );
             Control* c = OceanControlFactory().create(ocean, view);
             if ( c )
-                mainContainer->addControl(c);
+               mainContainer->addControl(c);
         }
     }
 

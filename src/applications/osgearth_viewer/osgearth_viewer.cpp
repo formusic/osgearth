@@ -53,7 +53,7 @@ main(int argc, char** argv)
         viewer.setSceneData( node );
 
         // configure the near/far so we don't clip things that are up close
-        viewer.getCamera()->setNearFarRatio(0.00002);
+        viewer.getCamera()->setNearFarRatio(0.000002);
 
         // osgEarth benefits from pre-compilation of GL objects in the pager. In newer versions of
         // OSG, this activates OSG's IncrementalCompileOpeartion in order to avoid frame breaks.
