@@ -565,7 +565,7 @@ MapNodeHelper::parse(MapNode*             mapNode,
         LabelControl* readout = new LabelControl();
         readout->setBackColor( Color(Color::Black, 0.8) );
         readout->setHorizAlign( Control::ALIGN_RIGHT );
-        readout->setVertAlign( Control::ALIGN_BOTTOM );
+        readout->setVertAlign( Control::ALIGN_TOP );
 
         Formatter* formatter = 
             useMGRS ? (Formatter*)new MGRSFormatter(MGRSFormatter::PRECISION_1M, 0L, MGRSFormatter::USE_SPACES) :
